@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "toyImg": "../assets/imgs/prod-1.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "sale",
+    "sale_percent": 30,
+    "price": 315.41,
+    "age": "1-2",
+    "category": "trains"
+  },
+  {
+    "id": 2,
+    "toyImg": "../assets/imgs/prod-2.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "sale",
+    "sale_value": 20.0,
+    "price": 973.93,
+    "age": "3-5",
+    "category": "cars"
+  },
+  {
+    "id": 3,
+    "toyImg": "../assets/imgs/prod-3.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "sale",
+    "sale_percent": 23,
+    "price": 93.57,
+    "age": "6-8",
+    "category": "girls"
+  },
+  {
+    "id": 4,
+    "toyImg": "../assets/imgs/prod-4.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "sale",
+    "sale_percent": 77,
+    "price": 271.59,
+    "age": "9-11",
+    "category": "motors"
+  },
+  {
+    "id": 5,
+    "toyImg": "../assets/imgs/prod-1.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "",
+    "sale_percent": "0",
+    "price": 58.06,
+    "age": "12+",
+    "category": "arcade"
+  },
+  {
+    "id": 6,
+    "toyImg": "../assets/imgs/prod-2.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "",
+    "sale_percent": "0",
+    "price": 948.94,
+    "age": "1-2",
+    "category": "airplanes"
+  },
+  {
+    "id": 7,
+    "toyImg": "../assets/imgs/prod-3.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "",
+    "sale_percent": "0",
+    "price": 267.03,
+    "age": "3-5",
+    "category": "fighting"
+  },
+  {
+    "id": 8,
+    "toyImg": "../assets/imgs/prod-4.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "",
+    "sale_percent": "0",
+    "price": 982.86,
+    "age": "6-8",
+    "category": "intelligence"
+  },
+  {
+    "id": 9,
+    "toyImg": "../assets/imgs/prod-1.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "sale",
+    "sale_percent": 20,
+    "price": 900.03,
+    "age": "9-11",
+    "category": "cars"
+  },
+  {
+    "id": 10,
+    "toyImg": "../assets/imgs/prod-2.svg",
+    "toyName": "ارضيات اسفنج شكل حيوانات",
+    "sale": "sale",
+    "sale_percent": 20,
+    "price": 609.27,
+    "age": "12+",
+    "category": "arcade"
+  }
+]

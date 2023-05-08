@@ -1,0 +1,80 @@
+.form-control {
+  text-align: start;
+}
+
+.section-div .section-div-title::before {
+  right: unset;
+  left: -30px;
+}
+
+.section-title .title::after,
+.navbar .content-slog .search-ctrls .ctrls .ctrl-link .badge,
+.main-side-nav .offcanvas-body .search-ctrls .ctrls .ctrl-link .badge,
+.carousel__button.is-close {
+  right: unset;
+  left: 0;
+}
+
+.cart .address-check .label .label-content,
+.selected-address .label-content {
+  padding-right: 0;
+  padding-left: 22px;
+}
+
+.contact-us .faq-accord {
+  border-right: none;
+  border-left: 3px solid var(--main-color);
+}
+
+.input-field .form-control {
+  padding-left: 0;
+  padding-right: 45px;
+}
+
+.input-field .show-pass {
+  left: unset;
+  right: 20px;
+}
+
+.breadcrumb-nav .breadcrumb-item + .breadcrumb-item::before {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+.navbar .content-slog .search-ctrls .search-form select,
+.main-side-nav .offcanvas-body .search-ctrls .search-form select {
+  padding-left: 0;
+  padding-right: 10px;
+  border-left: none;
+  border-right: 1px solid var(--border-color);
+}
+
+.prod-card .sale-badge,
+.main-side-nav .offcanvas-body .page-links .dropdown-toggle::after {
+  left: unset;
+  right: 20px;
+}
+
+.prods-carousel .owl-nav,
+.brands-carousel .owl-nav {
+  left: unset;
+  right: 0;
+}
+
+.user-dashboard .address-manage .slog-r {
+  border-left: none;
+  border-right: 1px solid var(--border-color);
+}
+
+@media screen and (max-width: 991px) {
+  .user-dashboard .address-manage .slog-r {
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-side-nav .offcanvas-body .search-ctrls .search-form select {
+    padding-right: 0;
+    border-right: none;
+  }
+}

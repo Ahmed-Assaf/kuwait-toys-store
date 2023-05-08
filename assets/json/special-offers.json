@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "toyImg": "../assets/imgs/prod-5.svg",
+    "toyName": "Game Console Controller + USB 3.0 Cable",
+    "sale": "sale",
+    "sale_value": 30.0,
+    "price": 315.41,
+    "end_date": "Jan 5, 2024 15:37:25"
+  }
+]

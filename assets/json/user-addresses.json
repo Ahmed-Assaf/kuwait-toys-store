@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "default": true,
+    "addressName": "المنزل",
+    "name": "Ahmed Assaf",
+    "address": "شارع الجلاء - المنصورة - الدقهلية",
+    "addressPhone": "+201017860853",
+    "shipping": 50
+  },
+  {
+    "id": 2,
+    "addressName": "العمل",
+    "name": "Ahmed Assaf",
+    "address": "شارع الروضة الشريفة - مدينة مبارك - المنصورة - الدقهلية",
+    "addressPhone": "+201550428259",
+    "shipping": 63
+  }
+]
