@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "trains",
+    "category_name": "العاب قطارات"
+  },
+  {
+    "id": 2,
+    "category": "cars",
+    "category_name": "العاب سيارات"
+  },
+  {
+    "id": 3,
+    "category": "girls",
+    "category_name": "العاب بنات"
+  },
+  {
+    "id": 4,
+    "category": "motors",
+    "category_name": "العاب درجات نارية"
+  },
+  {
+    "id": 5,
+    "category": "arcade",
+    "category_name": "العاب الورق"
+  },
+  {
+    "id": 6,
+    "category": "airplanes",
+    "category_name": "العاب طائرات"
+  },
+  {
+    "id": 7,
+    "category": "fighting",
+    "category_name": "العاب قتال"
+  },
+  {
+    "id": 8,
+    "category": "intelligence",
+    "category_name": "العاب ذكاء"
+  }
+]

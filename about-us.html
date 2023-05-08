@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/logo.svg" type="image/x-icon" />
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Page Title -->
+    <title>ألعاب أطفال الكويت</title>
+  </head>
+
+  <body>
+    <div id="page">
+      <!-- Upper-nav -->
+      <div class="upper-nav">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center mb-md-0 mb-3"
+            >
+              <p class="welcome">
+                مرحبا بك في موقع العاب أطفال الكويت لالعاب الاطفال بأفضل الاسعار
+              </p>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-center"
+            >
+              <ul class="links">
+                <li>
+                  <a href="#" class="link">
+                    <i class="fal fa-truck"></i>
+                    تتبع طلبك
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link">
+                    <i class="fal fa-question-circle"></i>
+                    مساعدة
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow-sm rounded-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-6 d-flex align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/imgs/logo.svg" />
+              </a>
+            </div>
+            <div
+              class="col-lg-10 col-6 d-flex align-items-center justify-content-lg-start justify-content-end"
+            >
+              <div
+                class="content-slog collapse navbar-collapse flex-column align-items-start"
+                id="navbarSupportedContent"
+              >
+                <div class="search-ctrls w-100">
+                  <form class="search-form" autocomplete="off">
+                    <select
+                      class="form-select"
+                      name="category"
+                      aria-label="Default select example"
+                    >
+                      <option value="all" selected>كل الاقسام</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      name="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button type="submit">
+                      <i class="fal fa-search"></i>
+                    </button>
+                  </form>
+                  <ul class="ctrls">
+                    <li>
+                      <a href="login.html" class="ctrl-link">
+                        <div class="icon">
+                          <i class="fal fa-user"></i>
+                        </div>
+                        تسجيل الدخول
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="ctrl-link"
+                        data-bs-toggle="offcanvas"
+                        href="#cartSideNav"
+                        role="button"
+                        aria-controls="cartSideNav"
+                      >
+                        <div class="icon position-relative">
+                          <i class="fal fa-shopping-bag"></i>
+                          <span class="badge" id="cartLength">0</span>
+                        </div>
+                        $0.00
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-content">
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          aria-current="page"
+                          href="index.html"
+                          >الصفحة الرئيسية</a
+                        >
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          الاقسام
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="offers.html">العروض</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="about-us.html"
+                          >من نحن</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          معلومات عنا
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"
+                          >تواصل معنا</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mainSideNav"
+                aria-controls="mainSideNav"
+              >
+                <i class="fal fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcrumb-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center mb-md-0 mb-3">
+              <h5 class="title">من نحن</h5>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-md-end"
+            >
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="index.html"><small>الرئيسية</small></a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    <p><small>من نحن</small></p>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us -->
+      <section class="about-us">
+        <div class="main-info text-center mb-5">
+          <div class="container">
+            <h3 class="title mb-3">
+              مرحبا بكم فى <span>ألعاب أطفال الكويت</span>
+            </h3>
+            <p class="text mb-4">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
+              في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها
+              تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+              محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص
+              مقروء.
+            </p>
+            <div class="owl-carousel about-carousel owl-theme">
+              <div class="item customXSmHeight image-cover">
+                <img src="assets/imgs/about-us-slide.jpg" alt="about" />
+              </div>
+              <div class="item customXSmHeight image-cover">
+                <img src="assets/imgs/about-us-slide.jpg" alt="about" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistics text-center">
+          <div class="container">
+            <h3 class="title mb-3">افضل تجربة شراء العاب اطفال اونلاين</h3>
+            <p class="text mb-4">
+              هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+              سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات
+              في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها
+              تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد
+              محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص
+              مقروء.
+            </p>
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <div class="statistics-card mb-4">
+                  <div class="icon">
+                    <i class="fal fa-th-large"></i>
+                  </div>
+                  <h3 class="num">10,000</h3>
+                  <p>اجمالى المنتجات</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="statistics-card mb-4">
+                  <div class="icon">
+                    <i class="fal fa-user"></i>
+                  </div>
+                  <h3 class="num">10,000</h3>
+                  <p>اجمالى العملاء</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="statistics-card mb-4">
+                  <div class="icon">
+                    <i class="fal fa-smile-beam"></i>
+                  </div>
+                  <h3 class="num">10,000</h3>
+                  <p>عملاء راضين</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6">
+                <div class="statistics-card mb-4">
+                  <div class="icon">
+                    <i class="fal fa-shopping-bag"></i>
+                  </div>
+                  <h3 class="num">10,000</h3>
+                  <p>عملية شراء</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- main-side-nav offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-start"
+        tabindex="-1"
+        id="mainSideNav"
+        aria-labelledby="mainSideNavLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mainSideNavLabel">
+            القائمة الرئيسية
+          </h5>
+          <button
+            type="button"
+            class="close-btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="search-ctrls">
+            <form class="search-form" autocomplete="off">
+              <select
+                class="form-select"
+                name="category"
+                aria-label="Default select example"
+              >
+                <option value="all" selected>كل الاقسام</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input
+                class="form-control me-2"
+                type="search"
+                name="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button type="submit">
+                <i class="fal fa-search"></i>
+              </button>
+            </form>
+            <ul class="ctrls">
+              <li>
+                <a href="login.html" class="ctrl-link">
+                  <div class="icon">
+                    <i class="fal fa-user"></i>
+                  </div>
+                  تسجيل الدخول
+                </a>
+              </li>
+              <li>
+                <a
+                  class="ctrl-link"
+                  data-bs-toggle="offcanvas"
+                  href="#cartSideNav"
+                  role="button"
+                  aria-controls="cartSideNav"
+                >
+                  <div class="icon position-relative">
+                    <i class="fal fa-shopping-bag"></i>
+                    <span class="badge" id="cartLength">0</span>
+                  </div>
+                  $0.00
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-links me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >الصفحة الرئيسية</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الاقسام
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">العروض</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about-us.html">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                معلومات عنا
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart-side-nav offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-end"
+        tabindex="-1"
+        id="cartSideNav"
+        aria-labelledby="cartSideNavLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="cartSideNavLabel">سلة المشتريات</h5>
+          <button
+            type="button"
+            class="close-btn text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body" id="cartProds">
+          <div class="prod-card-cart">
+            <div class="row">
+              <div class="col-4">
+                <a
+                  href="product-details.html"
+                  class="image image-content sameHeight p-2"
+                >
+                  <img src="assets/imgs/prod-1.svg" alt="image" />
+                </a>
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <small class="categ">العاب سيارات</small>
+                  <a href="product-details.html" class="name">
+                    <h6 class="text-truncate">ارضيات اسفنج شكل حيوانات</h6>
+                  </a>
+                  <p class="qty-price">
+                    1 x <span><span id="price">200</span>KWD</span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-2">
+                <button type="button" class="remove-btn ms-auto">
+                  <i class="fal fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="prod-card-cart">
+            <div class="row">
+              <div class="col-4">
+                <a
+                  href="product-details.html"
+                  class="image image-content sameHeight p-2"
+                >
+                  <img src="assets/imgs/prod-1.svg" alt="image" />
+                </a>
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <small class="categ">العاب سيارات</small>
+                  <a href="product-details.html" class="name">
+                    <h6 class="text-truncate">ارضيات اسفنج شكل حيوانات</h6>
+                  </a>
+                  <p class="qty-price">
+                    1 x <span><span id="price">200</span>KWD</span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-2">
+                <button type="button" class="remove-btn ms-auto">
+                  <i class="fal fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-footer">
+          <div class="total">
+            <h5 class="total-title">الاجمالى:</h5>
+            <h5>500KWD</h5>
+          </div>
+          <div class="btns">
+            <a href="cart.html" class="btn-2 w-100 mb-3">سلة المشتريات</a>
+            <a href="checkout.html" class="btn-1 w-100">الدفع</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 contact-info">
+              <ul>
+                <li>
+                  <img src="assets/imgs/logo.svg" class="logo" alt="logo" />
+                </li>
+                <li class="ask">
+                  <i class="fal fa-headset"></i>
+                  <div class="text">
+                    <p>للاستفسار ؟ تواصل معنا</p>
+                    <h4 dir="ltr">(800) 8001-8588, (0600) 874 548</h4>
+                  </div>
+                </li>
+                <li class="address">
+                  <h4>معلومات التواصل</h4>
+                  <p>
+                    المنصورة , الدقهلية , جمهورية مصر العربية , مجمع المحاكم 10
+                    بلوك ب شارع المحكمة
+                  </p>
+                </li>
+                <li class="social">
+                  <a href=""
+                    ><img src="assets/imgs/instagram.svg" alt="instagram"
+                  /></a>
+                  <a href=""
+                    ><img src="assets/imgs/twitter.svg" alt="twitter"
+                  /></a>
+                  <a href=""
+                    ><img src="assets/imgs/snapchat.svg" alt="snapchat"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 links">
+              <h4 class="footer-title">الوصول السريع</h4>
+              <div class="row">
+                <div class="col-md-7">
+                  <ul>
+                    <li><a href="index.html">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <ul>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 about-us">
+              <h4 class="footer-title">معلومات</h4>
+              <ul>
+                <li><a href="about-us.html">من نحن</a></li>
+                <li><a href="#">الخصوصية</a></li>
+                <li><a href="#">شروط الاستخدام</a></li>
+                <li><a href="#">الاسئله الشائعه</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 account">
+              <h4 class="footer-title">حسابي</h4>
+              <ul>
+                <li><a href="#">حسابي</a></li>
+                <li><a href="#">طلباتى</a></li>
+                <li><a href="#">السلة</a></li>
+                <li><a href="contact-us.html">تواصل معنا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rights">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 made-with">
+                <div class="content">
+                  <p>Made with <i class="fas fa-heart"></i> by WaitBuzz</p>
+                  <p>Think Out Of The Box</p>
+                </div>
+              </div>
+              <div class="col-sm-6 all-rights">
+                <p dir="ltr">موقع العاب اطفال الكويت- All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/fa-pro.js"></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      let direction = () => {
+          if ($("html").attr("dir") === "rtl") {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        navText = () => {
+          if ($("html").attr("dir") === "rtl") {
+            return [
+              "<i class='far fa-chevron-right'></i>",
+              "<i class='far fa-chevron-left'></i>",
+            ];
+          } else {
+            return [
+              "<i class='far fa-chevron-left'></i>",
+              "<i class='far fa-chevron-right'></i>",
+            ];
+          }
+        };
+
+      $(".about-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        items: 1,
+        rtl: direction(),
+        autoplay: true,
+        navText: navText(),
+      });
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

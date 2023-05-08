@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "couponName": "FREE50",
+    "couponVal": -50
+  },
+  {
+    "id": 2,
+    "couponName": "FREE75",
+    "couponVal": -75
+  },
+  {
+    "id": 3,
+    "couponName": "FREE25",
+    "couponVal": -25
+  },
+  {
+    "id": 4,
+    "couponName": "FREE13",
+    "couponVal": -13
+  }
+]

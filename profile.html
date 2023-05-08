@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/logo.svg" type="image/x-icon" />
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Page Title -->
+    <title>ألعاب أطفال الكويت</title>
+  </head>
+
+  <body>
+    <div id="page">
+      <!-- Upper-nav -->
+      <div class="upper-nav">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center mb-md-0 mb-3"
+            >
+              <p class="welcome">
+                مرحبا بك في موقع العاب أطفال الكويت لالعاب الاطفال بأفضل الاسعار
+              </p>
+            </div>
+            <div
+              class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-center"
+            >
+              <ul class="links">
+                <li>
+                  <a href="#" class="link">
+                    <i class="fal fa-truck"></i>
+                    تتبع طلبك
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link">
+                    <i class="fal fa-question-circle"></i>
+                    مساعدة
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow-sm rounded-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-6 d-flex align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/imgs/logo.svg" />
+              </a>
+            </div>
+            <div
+              class="col-lg-10 col-6 d-flex align-items-center justify-content-lg-start justify-content-end"
+            >
+              <div
+                class="content-slog collapse navbar-collapse flex-column align-items-start"
+                id="navbarSupportedContent"
+              >
+                <div class="search-ctrls w-100">
+                  <form class="search-form" autocomplete="off">
+                    <select
+                      class="form-select"
+                      name="category"
+                      aria-label="Default select example"
+                    >
+                      <option value="all" selected>كل الاقسام</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      name="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button type="submit">
+                      <i class="fal fa-search"></i>
+                    </button>
+                  </form>
+                  <ul class="ctrls">
+                    <li>
+                      <!-- if not logged in -->
+                      <!-- <a href="login.html" class="ctrl-link">
+                        <div class="icon">
+                          <i class="fal fa-user"></i>
+                        </div>
+                        تسجيل الدخول
+                      </a> -->
+
+                      <!-- if logged in -->
+                      <a href="profile.html" class="ctrl-link">
+                        <div class="icon">
+                          <i class="fal fa-user"></i>
+                        </div>
+                        مرحبا الاسم الاول
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="ctrl-link"
+                        data-bs-toggle="offcanvas"
+                        href="#cartSideNav"
+                        role="button"
+                        aria-controls="cartSideNav"
+                      >
+                        <div class="icon position-relative">
+                          <i class="fal fa-shopping-bag"></i>
+                          <span class="badge" id="cartLength">0</span>
+                        </div>
+                        $0.00
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav-content">
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          aria-current="page"
+                          href="index.html"
+                          >الصفحة الرئيسية</a
+                        >
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          الاقسام
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="offers.html">العروض</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">من نحن</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          معلومات عنا
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html"
+                          >تواصل معنا</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mainSideNav"
+                aria-controls="mainSideNav"
+              >
+                <i class="fal fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- profile -->
+      <div class="user-dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4">
+              <aside class="side-bar h-100">
+                <div class="bar-head">
+                  <h6 class="welcome"><b>مرحبا بك اسم المستخدم</b></h6>
+                  <small class="email">info@info.com</small>
+                </div>
+                <div class="bar-body">
+                  <ul class="links">
+                    <li>
+                      <a href="profile.html" class="link active">
+                        <i class="fal fa-user"></i>
+                        حسابى
+                      </a>
+                    </li>
+                    <li>
+                      <a href="addresses.html" class="link">
+                        <i class="fal fa-map-marker"></i>
+                        العناوين
+                      </a>
+                    </li>
+                    <li>
+                      <a href="wishlist.html" class="link">
+                        <i class="fal fa-heart"></i>
+                        المفضلة
+                      </a>
+                    </li>
+                    <li>
+                      <a href="orders.html" class="link">
+                        <i class="fal fa-list-alt"></i>
+                        قائمة الطلبات
+                      </a>
+                    </li>
+                    <li>
+                      <a href="login.html" class="link">
+                        <i class="fal fa-sign-out"></i>
+                        تسجيل الخروج
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </div>
+            <div class="col-lg-9 col-md-8">
+              <section class="page-cont h-100">
+                <div class="dashboard-title">
+                  <div class="slog-r">
+                    <h5 class="title mb-2"><b>حسابى</b></h5>
+                    <p class="subtitle">
+                      يمكنك التحكم فى معلومات حسابك وتغيير كلمة السر
+                    </p>
+                  </div>
+                </div>
+
+                <div class="section-div border-0">
+                  <h5 class="title mb-4">معلومات عامة</h5>
+                  <form>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label for="first-name" class="form-label"
+                            >الاسم الاول</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control input-1 text-capitalize"
+                            id="first-name"
+                            name="first-name"
+                            value="Ahmed"
+                            placeholder="ادخل الاسم الاول"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group mb-4">
+                          <label for="last-name" class="form-label"
+                            >الاسم الاخير</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control input-1 text-capitalize"
+                            id="last-name"
+                            name="last-name"
+                            value="Assaf"
+                            placeholder="ادخل الاسم الاخير"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn-1 sm">حفظ البيانات</button>
+                  </form>
+                </div>
+
+                <div class="section-div border-0">
+                  <h5 class="title mb-4">معلومات الحساب</h5>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label for="phone" class="form-label">رقم الهاتف</label>
+                        <input
+                          type="tel"
+                          class="form-control input-1"
+                          id="phone"
+                          name="phone"
+                          value="01000000000"
+                          placeholder="ادخل رقم الهاتف"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group mb-4">
+                        <label for="password" class="form-label"
+                          >كلمة المرور</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control input-1"
+                          id="password"
+                          name="password"
+                          value="15649872"
+                          placeholder="ادخل كلمة المرور"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex gap-4">
+                    <button
+                      type="button"
+                      class="btn-1 sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#phoneModal"
+                    >
+                      تغيير رقم الهاتف
+                    </button>
+                    <button
+                      type="button"
+                      class="btn-2 sm"
+                      data-bs-toggle="modal"
+                      data-bs-target="#passwordModal"
+                    >
+                      تغيير كلمة المرور
+                    </button>
+                    <button type="button" class="btn text-decoration-underline">
+                      حذف الحساب
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main-side-nav offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-start"
+        tabindex="-1"
+        id="mainSideNav"
+        aria-labelledby="mainSideNavLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mainSideNavLabel">
+            القائمة الرئيسية
+          </h5>
+          <button
+            type="button"
+            class="close-btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="search-ctrls">
+            <form class="search-form" autocomplete="off">
+              <select
+                class="form-select"
+                name="category"
+                aria-label="Default select example"
+              >
+                <option value="all" selected>كل الاقسام</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input
+                class="form-control me-2"
+                type="search"
+                name="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button type="submit">
+                <i class="fal fa-search"></i>
+              </button>
+            </form>
+            <ul class="ctrls">
+              <li>
+                <a href="login.html" class="ctrl-link">
+                  <div class="icon">
+                    <i class="fal fa-user"></i>
+                  </div>
+                  تسجيل الدخول
+                </a>
+              </li>
+              <li>
+                <a
+                  class="ctrl-link"
+                  data-bs-toggle="offcanvas"
+                  href="#cartSideNav"
+                  role="button"
+                  aria-controls="cartSideNav"
+                >
+                  <div class="icon position-relative">
+                    <i class="fal fa-shopping-bag"></i>
+                    <span class="badge" id="cartLength">0</span>
+                  </div>
+                  $0.00
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-links me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >الصفحة الرئيسية</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الاقسام
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">العروض</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                معلومات عنا
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart-side-nav offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-end"
+        tabindex="-1"
+        id="cartSideNav"
+        aria-labelledby="cartSideNavLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="cartSideNavLabel">سلة المشتريات</h5>
+          <button
+            type="button"
+            class="close-btn text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body" id="cartProds">
+          <div class="prod-card-cart">
+            <div class="row">
+              <div class="col-4">
+                <a
+                  href="product-details.html"
+                  class="image image-content sameHeight p-2"
+                >
+                  <img src="assets/imgs/prod-1.svg" alt="image" />
+                </a>
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <small class="categ">العاب سيارات</small>
+                  <a href="product-details.html" class="name">
+                    <h6 class="text-truncate">ارضيات اسفنج شكل حيوانات</h6>
+                  </a>
+                  <p class="qty-price">
+                    1 x <span><span id="price">200</span>KWD</span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-2">
+                <button type="button" class="remove-btn ms-auto">
+                  <i class="fal fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-footer">
+          <div class="total">
+            <h5 class="total-title">الاجمالى:</h5>
+            <h5>500KWD</h5>
+          </div>
+          <div class="btns">
+            <a href="cart.html" class="btn-2 w-100 mb-3">سلة المشتريات</a>
+            <a href="checkout.html" class="btn-1 w-100">الدفع</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <!-- password-modal -->
+      <div
+        class="modal main-modal fade"
+        id="passwordModal"
+        tabindex="-1"
+        aria-labelledby="passwordModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="passwordModalLabel">
+                تغيير كلمة المرور
+              </h5>
+              <button
+                type="button"
+                class="close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group mb-4">
+                  <label for="current-password" class="form-label"
+                    >كلمة المرور الحالية</label
+                  >
+                  <div class="input-field">
+                    <input
+                      type="password"
+                      class="form-control input-1"
+                      id="current-password"
+                      name="current-password"
+                      placeholder="ادخل كلمة المرور الحالية"
+                      required
+                    />
+                    <i class="fal fa-eye show-pass"></i>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="new-password" class="form-label"
+                    >كلمة المرور الجديدة</label
+                  >
+                  <div class="input-field">
+                    <input
+                      type="password"
+                      class="form-control input-1"
+                      id="new-password"
+                      name="new-password"
+                      placeholder="ادخل كلمة المرور الجديدة"
+                      required
+                    />
+                    <i class="fal fa-eye show-pass"></i>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="confirm-password" class="form-label"
+                    >تأكيد كلمة المرور الجديدة</label
+                  >
+                  <div class="input-field">
+                    <input
+                      type="password"
+                      class="form-control input-1"
+                      id="confirm-password"
+                      name="confirm-password"
+                      placeholder="تأكيد كلمة المرور الجديدة"
+                      required
+                    />
+                    <i class="fal fa-eye show-pass"></i>
+                  </div>
+                </div>
+                <button type="submit" class="btn-1 sm">
+                  تغيير كلمة المرور
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- phone-modal -->
+      <div
+        class="modal main-modal fade"
+        id="phoneModal"
+        tabindex="-1"
+        aria-labelledby="phoneModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="phoneModalLabel">تغيير رقم الهاتف</h5>
+              <button
+                type="button"
+                class="close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="fal fa-times"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="phoneSec">
+                <form action="">
+                  <div class="form-group mb-4">
+                    <label for="new-phone" class="form-label"
+                      >رقم الهاتف الجديد</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control input-1"
+                      id="new-phone"
+                      name="new-phone"
+                      placeholder="ادخل رقم الهاتف الجديد"
+                      required
+                    />
+                  </div>
+                  <button type="submit" class="btn-1 sm">
+                    ارسال رمز الامان
+                  </button>
+                </form>
+              </div>
+              <div id="codeSec">
+                <h6 class="title mb-2">تأكيد رقم الهاتف</h6>
+                <p class="subtitle mb-4">
+                  ادخل الرمز المرسل الى هاتفك المكون من 6 ارقام لتأكيد رقم
+                  الهاتف
+                </p>
+                <form action="" id="codeForm">
+                  <div
+                    class="phone-code d-flex justify-content-center gap-3 mb-4"
+                    dir="ltr"
+                    id="verifyCode"
+                  >
+                    <input
+                      type="number"
+                      class="code-input form-control text-center input-1"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code-input form-control text-center input-1"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code-input form-control text-center input-1"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code-input form-control text-center input-1"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code-input form-control text-center input-1"
+                      required
+                    />
+                    <input
+                      type="number"
+                      class="code-input form-control text-center input-1"
+                      required
+                    />
+                  </div>
+
+                  <input type="text" name="code" id="resultInput" hidden />
+
+                  <button type="submit" class="btn-1 w-100 mb-4">تأكيد</button>
+                  <a href="#" class="btn" id="editPhone">تعديل رقم الهاتف</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 contact-info">
+              <ul>
+                <li>
+                  <img src="assets/imgs/logo.svg" class="logo" alt="logo" />
+                </li>
+                <li class="ask">
+                  <i class="fal fa-headset"></i>
+                  <div class="text">
+                    <p>للاستفسار ؟ تواصل معنا</p>
+                    <h4 dir="ltr">(800) 8001-8588, (0600) 874 548</h4>
+                  </div>
+                </li>
+                <li class="address">
+                  <h4>معلومات التواصل</h4>
+                  <p>
+                    المنصورة , الدقهلية , جمهورية مصر العربية , مجمع المحاكم 10
+                    بلوك ب شارع المحكمة
+                  </p>
+                </li>
+                <li class="social">
+                  <a href=""
+                    ><img src="assets/imgs/instagram.svg" alt="instagram"
+                  /></a>
+                  <a href=""
+                    ><img src="assets/imgs/twitter.svg" alt="twitter"
+                  /></a>
+                  <a href=""
+                    ><img src="assets/imgs/snapchat.svg" alt="snapchat"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 links">
+              <h4 class="footer-title">الوصول السريع</h4>
+              <div class="row">
+                <div class="col-md-7">
+                  <ul>
+                    <li><a href="index.html">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <ul>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 about-us">
+              <h4 class="footer-title">معلومات</h4>
+              <ul>
+                <li><a href="about-us.html">من نحن</a></li>
+                <li><a href="#">الخصوصية</a></li>
+                <li><a href="#">شروط الاستخدام</a></li>
+                <li><a href="#">الاسئله الشائعه</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 account">
+              <h4 class="footer-title">حسابي</h4>
+              <ul>
+                <li><a href="#">حسابي</a></li>
+                <li><a href="#">طلباتى</a></li>
+                <li><a href="#">السلة</a></li>
+                <li><a href="contact-us.html">تواصل معنا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rights">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 made-with">
+                <div class="content">
+                  <p>Made with <i class="fas fa-heart"></i> by WaitBuzz</p>
+                  <p>Think Out Of The Box</p>
+                </div>
+              </div>
+              <div class="col-sm-6 all-rights">
+                <p dir="ltr">موقع العاب اطفال الكويت- All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/fa-pro.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      const inputElements = [...document.querySelectorAll("input.code-input")];
+      inputElements.forEach((ele, index) => {
+        ele.addEventListener("keydown", (e) => {
+          if (e.keyCode === 8 && e.target.value === "") {
+            inputElements[Math.max(0, index - 1)].focus();
+          }
+
+          e.target.style.backgroundColor = "#f5f5f5";
+        });
+        ele.addEventListener("input", (e) => {
+          const [first, ...rest] = e.target.value;
+          e.target.value = first ?? "";
+          if (index !== inputElements.length - 1 && first !== undefined) {
+            inputElements[index + 1].focus();
+            inputElements[index + 1].value = rest.join("");
+            inputElements[index + 1].dispatchEvent(new Event("input"));
+          }
+        });
+      });
+
+      function focusInput() {
+        $("#verifyCode input[type='number']:first-of-type").focus();
+      }
+
+      let codeInput = document.querySelectorAll(".code-input");
+      $("#codeForm").submit(function (e) {
+        var codeVal = $(codeInput)
+          .map(function () {
+            return this.value;
+          })
+          .get()
+          .join("");
+        $("#resultInput").val(codeVal);
+      });
+
+      $("#phoneSec")
+        .find("button[type='submit']")
+        .click((e) => {
+          e.preventDefault();
+          $("#phoneSec").hide();
+          $("#codeSec").show();
+          focusInput();
+        });
+
+      $("#editPhone").click((e) => {
+        e.preventDefault();
+        $("#phoneSec").show();
+        $("#codeSec").hide();
+      });
+
+      var myModalEl = document.getElementById("phoneModal");
+      myModalEl.addEventListener("show.bs.modal", function (event) {
+        $("#phoneSec").show();
+        $("#codeSec").hide();
+      });
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

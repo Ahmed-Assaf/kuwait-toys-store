@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/logo.svg" type="image/x-icon" />
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-en.css" />
+
+    <!-- Page Title -->
+    <title>ألعاب أطفال الكويت</title>
+  </head>
+
+  <body>
+    <div id="page">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-6 d-flex align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/imgs/logo.svg" />
+              </a>
+            </div>
+            <div
+              class="col-lg-10 col-6 d-flex align-items-center justify-content-lg-start justify-content-end"
+            >
+              <div
+                class="content-slog collapse navbar-collapse flex-column align-items-start"
+                id="navbarSupportedContent"
+              >
+                <div class="nav-content w-100 pb-3 mb-3">
+                  <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                  >
+                    <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                      <li class="nav-item me-auto">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#categoriesOffcanvas"
+                        >
+                          <small>
+                            <i class="fal fa-ellipsis-h-alt"></i>
+                            الاقسام
+                          </small>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="offers.html">
+                          <small>العروض</small>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">
+                          <small>من نحن</small>
+                        </a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                          <small>تواصل معنا</small>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="search-ctrls w-100">
+                  <form class="search-form" autocomplete="off">
+                    <select
+                      class="form-select"
+                      name="category"
+                      aria-label="Default select example"
+                    >
+                      <option value="all" selected>كل الاقسام</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      name="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button type="submit">
+                      <i class="fal fa-search"></i>
+                    </button>
+                  </form>
+                  <ul class="ctrls">
+                    <li>
+                      <a class="ctrl-link" href="index.html">
+                        <div class="icon">
+                          <i class="fal fa-home-alt"></i>
+                        </div>
+                        الرئيسية
+                      </a>
+                    </li>
+
+                    <li>
+                      <!-- if not logged in -->
+                      <!-- <a href="login.html" class="ctrl-link">
+                        <div class="icon">
+                          <i class="fal fa-user"></i>
+                        </div>
+                        تسجيل الدخول
+                      </a> -->
+
+                      <!-- if logged in -->
+                      <a href="profile.html" class="ctrl-link">
+                        <div class="icon">
+                          <i class="fal fa-user"></i>
+                        </div>
+                        مرحبا الاسم الاول
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="ctrl-link" id="cartNavBtn">
+                        <div class="icon position-relative">
+                          <i class="fal fa-shopping-bag"></i>
+                          <span class="badge" id="cartLength">0</span>
+                        </div>
+                        $0.00
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mainSideNav"
+                aria-controls="mainSideNav"
+              >
+                <i class="fal fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <header class="main-slider customXSmHeight">
+        <div class="owl-carousel slider-carousel owl-theme">
+          <div class="item">
+            <div class="image image-cover">
+              <img src="assets/imgs/slider.svg" />
+            </div>
+            <div class="slide-content text-center">
+              <div class="container">
+                <h1 class="title">احصل على افضل العاب لاطفالك بأفضل الاسعار</h1>
+                <p class="text">احصل على كل ما هو جديد لطفلك بأفضل الاسعار</p>
+                <a href="shop.html" class="btn-1 m-auto">تسوق الان</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image image-cover">
+              <img src="assets/imgs/slider.svg" />
+            </div>
+            <div class="slide-content text-center">
+              <div class="container">
+                <h1 class="title">احصل على افضل العاب لاطفالك بأفضل الاسعار</h1>
+                <p class="text">احصل على كل ما هو جديد لطفلك بأفضل الاسعار</p>
+                <a href="shop.html" class="btn-1 m-auto">تسوق الان</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Banners -->
+      <section class="banners">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-1.svg" alt="banner" />
+              </a>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-2.svg" alt="banner" />
+              </a>
+            </div>
+            <div class="col-sm-3 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-3.svg" alt="banner" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Seller -->
+      <section class="best-seller">
+        <div class="section-title">
+          <div class="container">
+            <h4 class="title">الأعلى مبيعا</h4>
+          </div>
+        </div>
+
+        <div class="container">
+          <div
+            class="owl-carousel prods-carousel owl-theme"
+            id="bestSeller"
+          ></div>
+        </div>
+      </section>
+
+      <!-- offers -->
+      <section class="offers">
+        <div class="section-title">
+          <div class="container">
+            <h4 class="title">العروض</h4>
+            <a href="#" class="button btn-2 sm">الكل</a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row" id="offersWithSpecial">
+            <div class="col-lg-6">
+              <div class="row" id="offersRow"></div>
+            </div>
+            <div class="col-lg-6" id="specialOffer"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Banners -->
+      <section class="banners">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-4.svg" alt="banner" />
+              </a>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-5.svg" alt="banner" />
+              </a>
+            </div>
+            <div class="col-sm-3 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-1.svg" alt="banner" />
+              </a>
+            </div>
+            <div class="col-sm-6 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-2.svg" alt="banner" />
+              </a>
+            </div>
+            <div class="col-sm-3 mb-4">
+              <a href="#" class="banner-card image-cover">
+                <img src="assets/imgs/banner-3.svg" alt="banner" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent -->
+      <section class="recent">
+        <div class="section-title">
+          <div class="container">
+            <h4 class="title">المضاف حديثا</h4>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="owl-carousel prods-carousel owl-theme" id="recent"></div>
+        </div>
+      </section>
+
+      <!-- Top Rated -->
+      <section class="top-rated">
+        <div class="section-title">
+          <div class="container">
+            <h4 class="title">الاعلى تقييما</h4>
+          </div>
+        </div>
+
+        <div class="container">
+          <div
+            class="owl-carousel prods-carousel owl-theme"
+            id="topRated"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Banners -->
+      <section class="banners">
+        <div class="container">
+          <div class="row">
+            <a href="#" class="banner-card image-cover">
+              <img src="assets/imgs/banner-6.svg" alt="banner" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands -->
+      <section class="top-rated">
+        <div class="section-title">
+          <div class="container">
+            <h4 class="title">الماركات</h4>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="owl-carousel brands-carousel owl-theme" id="brands"></div>
+        </div>
+      </section>
+
+      <!-- main-side-nav offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-start"
+        tabindex="-1"
+        id="mainSideNav"
+        aria-labelledby="mainSideNavLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mainSideNavLabel">
+            القائمة الرئيسية
+          </h5>
+          <button
+            type="button"
+            class="close-btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="search-ctrls">
+            <form class="search-form" autocomplete="off">
+              <select
+                class="form-select"
+                name="category"
+                aria-label="Default select example"
+              >
+                <option value="all" selected>كل الاقسام</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <input
+                class="form-control me-2"
+                type="search"
+                name="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button type="submit">
+                <i class="fal fa-search"></i>
+              </button>
+            </form>
+            <ul class="ctrls">
+              <li>
+                <a href="login.html" class="ctrl-link">
+                  <div class="icon">
+                    <i class="fal fa-user"></i>
+                  </div>
+                  تسجيل الدخول
+                </a>
+              </li>
+              <li>
+                <a
+                  class="ctrl-link"
+                  data-bs-toggle="offcanvas"
+                  href="#cartSideNav"
+                  role="button"
+                  aria-controls="cartSideNav"
+                >
+                  <div class="icon position-relative">
+                    <i class="fal fa-shopping-bag"></i>
+                    <span class="badge" id="cartLength">0</span>
+                  </div>
+                  $0.00
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-links">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >الصفحة الرئيسية</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الاقسام
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">العروض</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">من نحن</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                معلومات عنا
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart-side-nav offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-end"
+        tabindex="-1"
+        id="cartSideNav"
+        aria-labelledby="cartSideNavLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="cartSideNavLabel">سلة المشتريات</h5>
+          <button
+            type="button"
+            class="close-btn text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body" id="cartProds"></div>
+        <div class="offcanvas-footer">
+          <div class="total">
+            <h5 class="total-title">الاجمالى:</h5>
+            <h5>500KWD</h5>
+          </div>
+          <div class="btns">
+            <a href="cart.html" class="btn-2 w-100 mb-3">سلة المشتريات</a>
+            <a href="checkout.html" class="btn-1 w-100">الدفع</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- categs offcanvas -->
+      <div
+        class="offcanvas main-side-nav offcanvas-start"
+        tabindex="-1"
+        id="categoriesOffcanvas"
+        aria-labelledby="categoriesOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="categoriesOffcanvasLabel">الاقسام</h5>
+          <button
+            type="button"
+            class="close-btn text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="page-links">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> اسم القسم </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> اسم القسم </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> اسم القسم </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> اسم القسم </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"> اسم القسم </a>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <!-- cartToast -->
+      <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 1500">
+        <div
+          id="cartToast"
+          class="toast cart-toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-body">
+            <div class="content"></div>
+
+            <button
+              type="button"
+              class="close-btn"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            >
+              <i class="fal fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 contact-info">
+              <ul>
+                <li>
+                  <img src="assets/imgs/logo.svg" class="logo" alt="logo" />
+                </li>
+                <li class="ask">
+                  <i class="fal fa-headset"></i>
+                  <div class="text">
+                    <p>للاستفسار ؟ تواصل معنا</p>
+                    <h4 dir="ltr">(800) 8001-8588, (0600) 874 548</h4>
+                  </div>
+                </li>
+                <li class="address">
+                  <h4>معلومات التواصل</h4>
+                  <p>
+                    المنصورة , الدقهلية , جمهورية مصر العربية , مجمع المحاكم 10
+                    بلوك ب شارع المحكمة
+                  </p>
+                </li>
+                <li class="social">
+                  <a href=""
+                    ><img src="assets/imgs/instagram.svg" alt="instagram"
+                  /></a>
+                  <a href=""
+                    ><img src="assets/imgs/twitter.svg" alt="twitter"
+                  /></a>
+                  <a href=""
+                    ><img src="assets/imgs/snapchat.svg" alt="snapchat"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 links">
+              <h4 class="footer-title">الوصول السريع</h4>
+              <div class="row">
+                <div class="col-md-7">
+                  <ul>
+                    <li><a href="index.html">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-5">
+                  <ul>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                    <li><a href="#">العاب اطفال</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 about-us">
+              <h4 class="footer-title">معلومات</h4>
+              <ul>
+                <li><a href="about-us.html">من نحن</a></li>
+                <li><a href="#">الخصوصية</a></li>
+                <li><a href="#">شروط الاستخدام</a></li>
+                <li><a href="#">الاسئله الشائعه</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 account">
+              <h4 class="footer-title">حسابي</h4>
+              <ul>
+                <li><a href="#">حسابي</a></li>
+                <li><a href="#">طلباتى</a></li>
+                <li><a href="#">السلة</a></li>
+                <li><a href="contact-us.html">تواصل معنا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rights">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 made-with">
+                <div class="content">
+                  <p>Made with <i class="fas fa-heart"></i> by WaitBuzz</p>
+                  <p>Think Out Of The Box</p>
+                </div>
+              </div>
+              <div
+                class="col-sm-6 all-rights d-flex align-items-center justify-content-sm-end justify-content-center"
+              >
+                <p>موقع العاب اطفال الكويت- All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
+    <script src="assets/js/fa-pro.js"></script>
+
+    <script src="assets/js/counter.down.js"></script>
+
+    <script src="assets/js/jquery.cookie.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      let direction = () => {
+          if ($("html").attr("dir") === "rtl") {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        navText = () => {
+          if ($("html").attr("dir") === "rtl") {
+            return [
+              "<i class='far fa-chevron-right'></i>",
+              "<i class='far fa-chevron-left'></i>",
+            ];
+          } else {
+            return [
+              "<i class='far fa-chevron-left'></i>",
+              "<i class='far fa-chevron-right'></i>",
+            ];
+          }
+        };
+
+      $(".slider-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: true,
+        nav: false,
+        rtl: direction(),
+        items: 1,
+        animateOut: "fadeOut",
+        mouseDrag: false,
+        autoplay: true,
+      });
+
+      $(".prods-carousel").owlCarousel({
+        loop: false,
+        margin: 24,
+        nav: true,
+        dots: false,
+        rtl: direction(),
+        responsive: {
+          0: {
+            items: 2,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+        navText: navText(),
+      });
+
+      $(".brands-carousel").owlCarousel({
+        loop: false,
+        margin: 24,
+        nav: true,
+        dots: false,
+        rtl: direction(),
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+        navText: navText(),
+      });
+    </script>
+
+    <!-- best-seller-ajax-load-api -->
+    <script>
+      $.ajax({
+        url: "assets/json/best-seller.json",
+        method: "GET",
+        success: function (data) {
+          for (let i = 0; i < data.length; i++) {
+            let dataItem = data[i];
+
+            let dataObj = {
+                id: dataItem.id,
+                img: dataItem.toyImg,
+                name: dataItem.toyName,
+              },
+              dataString = JSON.stringify(dataObj);
+
+            if (dataItem.hasOwnProperty("sale_percent")) {
+              discountValue = (dataItem.sale_percent * dataItem.price) / 100;
+              discountPrice = (dataItem.price - discountValue).toFixed(2);
+            } else if (dataItem.hasOwnProperty("sale_value")) {
+              discountPrice = (dataItem.price - dataItem.sale_value).toFixed(2);
+            }
+
+            let saleBadge = dataItem.hasOwnProperty("sale_percent")
+              ? `${dataItem.sale_percent}%`
+              : `${dataItem.sale_value}$`;
+
+            html = `
+              <div class="item">
+                <div class="card prod-card ${dataItem.sale}">
+                  <a href="product-details.html" class="image image-content sameHeight p-sm-4 p-3">
+                    <div class="sale-badge sameHeight">خصم <span>${saleBadge}</span></div>
+                    <img src="${dataItem.toyImg}" alt="product">
+                  </a>
+                  <div class="card-body">
+                    <a href="product-details.html" class="prod-name">
+                      <h5 class="text-truncate">${dataItem.toyName}</h5>
+                    </a>
+                    <div class="price-add-cart">
+                      <p class="price">${discountPrice}$ <small class="original">${dataItem.price}$</small></p>
+                      <button type="button" class="add-to-cart sameHeight" onclick="addToCart(${dataItem.id}, this)">
+                        <i class="fal fa-shopping-basket"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          `;
+            $("#bestSeller").trigger("add.owl.carousel", html);
+          }
+          $("#bestSeller").trigger("refresh.owl.carousel");
+        },
+      });
+    </script>
+
+    <!-- offers-ajax-load-api -->
+    <script>
+      $.ajax({
+        url: "assets/json/offers.json",
+        method: "GET",
+        success: function (data) {
+          function calcSale(item) {
+            if (item.hasOwnProperty("sale_percent")) {
+              discountValue = (item.sale_percent * item.price) / 100;
+              discountPrice = (item.price - discountValue).toFixed(2);
+            } else if (item.hasOwnProperty("sale_value")) {
+              discountPrice = (item.price - item.sale_value).toFixed(2);
+            }
+            saleBadge = item.hasOwnProperty("sale_percent")
+              ? `${item.sale_percent}%`
+              : `${item.sale_value}$`;
+          }
+
+          for (let i = 0; i < 4; i++) {
+            let offerItem = data[i];
+            calcSale(offerItem);
+            html = `
+            <div div class="col-6" >
+                    <div class="card prod-card ${offerItem.sale}" id="${offerItem.id}">
+                      <a href="product-details.html" class="image image-content sameHeight  p-sm-4 p-3">
+                        <div class="sale-badge sameHeight">خصم <span>${saleBadge}</span></div>
+                        <img src="${offerItem.toyImg}" alt="product">
+                      </a>
+                      <div class="card-body">
+                        <a href="product-details.html" class="prod-name">
+                          <h5 class="text-truncate">${offerItem.toyName}</h5>
+                        </a>
+                        <div class="price-add-cart">
+                          <p class="price">${discountPrice}$ <small class="original">${offerItem.price}$</small></p>
+                          <button type="button" class="add-to-cart sameHeight" onclick="addToCart(${offerItem.id}, this)">
+                            <i class="fal fa-shopping-basket"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            `;
+            $("#offersRow").append(html);
+          }
+        },
+      });
+    </script>
+
+    <script>
+      $.ajax({
+        url: "assets/json/special-offers.json",
+        method: "GET",
+        success: function (data) {
+          function calcSale(item) {
+            if (item.hasOwnProperty("sale_percent")) {
+              discountValue = (item.sale_percent * item.price) / 100;
+              discountPrice = (item.price - discountValue).toFixed(2);
+            } else if (item.hasOwnProperty("sale_value")) {
+              discountPrice = (item.price - item.sale_value).toFixed(2);
+            }
+            saleBadge = item.hasOwnProperty("sale_percent")
+              ? `${item.sale_percent}%`
+              : `${item.sale_value}$`;
+          }
+
+          for (let i = 0; i < 1; i++) {
+            let specialItem = data[i];
+            calcSale(specialItem);
+            specialOfferHtml = `
+              <div class="card prod-card-special ${specialItem.sale}" id="${specialItem.id}">
+                <div class="title-sale">
+                  <h5 class="title">عرض خاص</h5>
+                  <div class="sale-badge sameHeight">خصم <span>${saleBadge}</span></div>
+                </div>
+                
+                <div href="product-details.html" class="image image-content customSmHeight">
+                  <img src="${specialItem.toyImg}" alt="product">
+                </div>
+
+                <a href="product-details.html" class="d-block prod-name w-100">
+                  <h5 class="text-truncate">${specialItem.toyName}</h5>
+                </a>
+
+                <h4 class="price">${discountPrice}$ <small class="original">${specialItem.price}$</small></h4>
+
+                <div class="end-date">
+                  <h6 class="mb-3">اسرع بالشراء! ينتهى العرض فى:</h6>
+                  <div id="counter" dir="ltr"></div>
+                </div>
+
+                <button class="btn-1 w-100" onclick="addToCart(${specialItem.id}, this)">اضف للسله</button>
+              </div>
+            `;
+            $("#specialOffer").append(specialOfferHtml);
+          }
+        },
+      });
+    </script>
+
+    <!-- recent-ajax-load-api -->
+    <script>
+      $.ajax({
+        url: "assets/json/recent.json",
+        method: "GET",
+        success: function (data) {
+          for (let i = 0; i < data.length; i++) {
+            let dataItem = data[i];
+
+            if (dataItem.hasOwnProperty("sale_percent")) {
+              discountValue = (dataItem.sale_percent * dataItem.price) / 100;
+              discountPrice = (dataItem.price - discountValue).toFixed(2);
+            } else if (dataItem.hasOwnProperty("sale_value")) {
+              discountPrice = (dataItem.price - dataItem.sale_value).toFixed(2);
+            }
+
+            let saleBadge = dataItem.hasOwnProperty("sale_percent")
+              ? `${dataItem.sale_percent}%`
+              : `${dataItem.sale_value}$`;
+
+            html = `
+            <div class="item">
+              <div class="card prod-card ${dataItem.sale}">
+                <a href="product-details.html" class="image image-content sameHeight  p-sm-4 p-3">
+                  <div class="sale-badge sameHeight">خصم <span>${saleBadge}</span></div>
+                  <img src="${dataItem.toyImg}" alt="product">
+                </a>
+                <div class="card-body">
+                  <a href="product-details.html" class="prod-name">
+                    <h5 class="text-truncate">${dataItem.toyName}</h5>
+                  </a>
+                  <div class="price-add-cart">
+                    <p class="price">${discountPrice}$ <small class="original">${dataItem.price}$</small></p>
+                    <button type="button" class="add-to-cart sameHeight" onclick="addToCart(${dataItem.id}, this)">
+                      <i class="fal fa-shopping-basket"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `;
+            $("#recent").trigger("add.owl.carousel", html);
+          }
+          $("#recent").trigger("refresh.owl.carousel");
+        },
+      });
+    </script>
+
+    <!-- top-rated-ajax-load-api -->
+    <script>
+      $.ajax({
+        url: "assets/json/top-rated.json",
+        method: "GET",
+        success: function (data) {
+          for (let i = 0; i < data.length; i++) {
+            let dataItem = data[i];
+
+            if (dataItem.hasOwnProperty("sale_percent")) {
+              discountValue = (dataItem.sale_percent * dataItem.price) / 100;
+              discountPrice = (dataItem.price - discountValue).toFixed(2);
+            } else if (dataItem.hasOwnProperty("sale_value")) {
+              discountPrice = (dataItem.price - dataItem.sale_value).toFixed(2);
+            }
+
+            let saleBadge = dataItem.hasOwnProperty("sale_percent")
+              ? `${dataItem.sale_percent}%`
+              : `${dataItem.sale_value}$`;
+
+            html = `
+            <div class="item">
+              <div class="card prod-card ${dataItem.sale}">
+                <a href="product-details.html" class="image image-content sameHeight  p-sm-4 p-3">
+                  <div class="sale-badge sameHeight">خصم <span>${saleBadge}</span></div>
+                  <img src="${dataItem.toyImg}" alt="product">
+                </a>
+                <div class="card-body">
+                  <a href="product-details.html" class="prod-name">
+                    <h5 class="text-truncate">${dataItem.toyName}</h5>
+                  </a>
+                  <div class="stars rate-${dataItem.rate}">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="price-add-cart">
+                    <p class="price">${discountPrice}$ <small class="original">${dataItem.price}$</small></p>
+                    <button type="button" class="add-to-cart sameHeight" onclick="addToCart(${dataItem.id}, this)">
+                      <i class="fal fa-shopping-basket"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `;
+            $("#topRated").trigger("add.owl.carousel", html);
+          }
+          $("#topRated").trigger("refresh.owl.carousel");
+        },
+      });
+    </script>
+
+    <!-- brands-ajax-load-api -->
+    <script>
+      $.ajax({
+        url: "assets/json/brands.json",
+        method: "GET",
+        success: function (data) {
+          for (let i = 0; i < data.length; i++) {
+            let dataItem = data[i];
+
+            html = `
+            <div class="item">
+              <a href="#" class="brand-card image-content customSmHeight">
+                <img src="${dataItem.brand_img}">
+              </a>
+            </div>
+        `;
+            $("#brands").trigger("add.owl.carousel", html);
+          }
+          $("#brands").trigger("refresh.owl.carousel");
+        },
+      });
+    </script>
+
+    <script>
+      let itemsArr = [];
+      if ($.cookie("cartItemsCookie")) {
+        itemsArr = JSON.parse($.cookie("cartItemsCookie"));
+      }
+
+      var toast = new bootstrap.Toast("#cartToast");
+
+      function addToCart(id, el, e) {
+        if ($(el).hasClass("add-to-cart")) {
+          if (itemsArr.includes(id)) {
+            $(el).attr("disabled", "disabled");
+
+            $("#cartToast").addClass("warning");
+            $("#cartToast").removeClass("success");
+
+            $("#cartToast .toast-body .content").html(`
+            <i class="fal fa-exclamation-triangle"></i>
+            <p class="text">تمت اضافة المنتج بالفعل للسلة</p>
+          `);
+
+            toast.show();
+          } else {
+            itemsArr.push(id);
+            $.cookie("cartItemsCookie", JSON.stringify(itemsArr));
+
+            $("#cartToast").addClass("success");
+            $("#cartToast").removeClass("warning");
+
+            $("#cartToast .toast-body .content").html(`
+            <i class="fal fa-check"></i>
+            <p class="text">تمت اضافة المنتج بنجاح</p>
+          `);
+            toast.show();
+          }
+        }
+
+        console.log(itemsArr);
+
+        $.ajax({
+          url: "assets/json/all-prods.json",
+          method: "GET",
+          success: (data) => {
+            let filtered = data.filter((el) => {
+              return itemsArr.indexOf(el.id) !== -1;
+            });
+
+            $("#cartProds").empty();
+
+            for (const dataItem of filtered) {
+              html = `
+              <div class="prod-card-cart">
+                <div class="row">
+                  <div class="col-4">
+                    <a
+                      href="product-details.html"
+                      class="image image-content sameHeight p-2"
+                    >
+                      <img src="${dataItem.toyImg}" alt="image" />
+                    </a>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-body">
+                      <small class="categ">${dataItem.toyName}</small>
+                      <a href="product-details.html" class="name">
+                        <h6 class="text-truncate">ارضيات اسفنج شكل حيوانات</h6>
+                      </a>
+                      <p class="qty-price">
+                        1 x <span><span id="price">${dataItem.price}</span>KWD</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <button type="button" class="remove-btn ms-auto">
+                      <i class="fal fa-trash-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              `;
+
+              $("#cartProds").append(html);
+            }
+
+            let cartNav = new bootstrap.Offcanvas("#cartSideNav");
+            cartNav.show();
+          },
+        });
+      }
+      $("#cartNavBtn").click(() => {
+        addToCart();
+      });
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
